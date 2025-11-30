@@ -1,6 +1,6 @@
 # User Management Dashboard
 
-![Preview]("https://raw.githubusercontent.com/rajeev1503/user-management-dashboard/master/public/preview.png")
+![Preview](https://raw.githubusercontent.com/rajeev1503/user-management-dashboard/master/public/preview.png)
 This is a simple dashboard built with **Next.js 15** and **React 19**.
 
 ## 📂 Structure
