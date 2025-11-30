@@ -22,7 +22,17 @@ I used two libraries for state management to keep things organized:
 **Why both?**
 Separating "server state" (data) from "client state" (UI) makes the app feel faster and easier to debug.
 
-## 🚀 How to Run
+## � Other Cool Libraries
+
+Here are some other libraries I used to make this work:
+
+- **shadcn/ui + Tailwind CSS**: For making it look good without writing a ton of CSS.
+- **Recharts**: For the charts on the analytics page.
+- **React Hook Form + Zod**: For handling forms and making sure the data is correct.
+- **Lucide React**: For the icons.
+- **date-fns**: For formatting dates easily.
+
+## �🚀 How to Run
 
 1.  Install dependencies:
 
