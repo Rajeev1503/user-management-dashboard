@@ -1,0 +1,20 @@
+# Builds
+.next
+out
+dist
+build
+coverage
+
+# Dependencies
+node_modules
+
+# Env & config
+*.log
+*.lock
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Misc
+public
+.next/static

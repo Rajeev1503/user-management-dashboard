@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# User Management Dashboard
 
-## Getting Started
+[Preview]("https://raw.githubusercontent.com/rajeev1503/user-management-dashboard/main/public/preview.png")
+This is a simple dashboard built with **Next.js 15** and **React 19**.
 
-First, run the development server:
+## 📂 Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I organized the code by features to keep it clean:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **`src/app`**: Uses the Next.js App Router.
+- **`src/components/features`**: Components for specific features like `UsersTable`.
+- **`src/store`**: Global state using Zustand.
+- **`src/hooks`**: Custom hooks like `useUsersQuery`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Choices
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+I used two libraries for state management to keep things organized:
 
-## Learn More
+1.  **React Query**: I used this for fetching data from the server. It handles loading states and caching automatically, which is much better than writing `useEffect` everywhere.
+2.  **Zustand**: I used this for client-side state like filters, sorting, and the theme toggle. It's really simple and lightweight compared to Redux.
 
-To learn more about Next.js, take a look at the following resources:
+**Why both?**
+Separating "server state" (data) from "client state" (UI) makes the app feel faster and easier to debug.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 How to Run
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1.  Install dependencies:
 
-## Deploy on Vercel
+    ```bash
+    npm install
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  Run the dev server:
+    ```bash
+    npm run dev
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open [http://localhost:3000](http://localhost:3000) to see it!
